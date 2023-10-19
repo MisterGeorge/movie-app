@@ -1,5 +1,5 @@
 <script setup>
-  import WelcomeItem from './WelcomeItem.vue'
+  import WelcomeItem from './TheHeroPage.vue'
   import DocumentationIcon from './icons/IconDocumentation.vue'
 </script>
 
