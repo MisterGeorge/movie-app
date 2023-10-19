@@ -21,6 +21,7 @@
         <v-col cols="12" lg="10">
           <nav class="nav">
             <RouterLink class="nav-link" to="/">Home</RouterLink>
+            <RouterLink class="nav-link" to="/add">Add new</RouterLink>
           </nav>
         </v-col>
       </v-row>
