@@ -27,7 +27,7 @@
                 class="card-thumbanil rounded-b-xl"
                 :src="thumbnail"
                 width="300px"
-                height="350px"
+                height="400px"
                 cover
             >
                 <div class="d-flex justify-center card-rating text-center ms-2 mt-2">
@@ -42,14 +42,14 @@
                 </div>
             </v-img>
 
-            <v-card-title class="card-title pt-3">
+            <v-card-title class="card-title pa-4 text-center">
                 {{ title }}
             </v-card-title>
         </v-card>
     </v-hover>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
     .card {
         @include flexbox;
         @include flex-dir(column);
@@ -58,6 +58,7 @@
         @include padding(0,0,0,0);
         @include border-radius (var(--vt-c-border-radius));
         background: var(--black-20, rgba(0, 0, 0, 0.20)!important);
+        cursor: pointer;
     
         .card-thumbnail {
             @include align-items(flex-start);
@@ -72,9 +73,10 @@
         }
 
         .card-title {
-            @include font(var(--vt-c-font-family), 1rem, 600, normal, normal);
-            line-height: 1.5rem!important;
-            letter-spacing: 0.02rem;
+            @include font(var(--vt-c-font-family), 1rem, 500, normal, normal);
+            line-height: 1rem!important;
+            letter-spacing: 0.02rem!important;
+            width: 100%;
         }
     }
 </style>

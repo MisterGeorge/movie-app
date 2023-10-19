@@ -25,6 +25,9 @@
   --vt-c-border-radius-card: 2.5rem;
 
   --vt-c-font-family: 'Poppins', sans-serif;
+
+  --vt-c-start-color: #362C92;
+  --vt-c-end-color: #126297;
 }
 
 /* semantic color variables for this project */

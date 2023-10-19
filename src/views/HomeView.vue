@@ -30,7 +30,7 @@
         md="3"
       >
         <Card
-          thumbnail="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          thumbnail="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg"
           title="Avengers: Age of Ultron" 
           rating="8" 
         />
