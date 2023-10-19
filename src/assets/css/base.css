@@ -10,7 +10,6 @@
 
   --vt-c-indigo: #2c3e50;
   --vt-c-background: #2B3035;
-
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
   --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
@@ -21,9 +20,11 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
-
   --vt-c-border-radius: 0.75rem;
   --vt-c-border-radius-button: 0.5rem;
+  --vt-c-border-radius-card: 2.5rem;
+
+  --vt-c-font-family: 'Poppins', sans-serif;
 }
 
 /* semantic color variables for this project */
@@ -71,7 +72,7 @@ body {
   background-size: 100%;
   background-position: 50% -160px;
   background-repeat: repeat-y;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--vt-c-font-family);
   color: var(--grey-50, #EBEEF5);
   transition: color 0.5s, background-color 0.5s;
   text-rendering: optimizeLegibility;
