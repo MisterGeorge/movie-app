@@ -10,18 +10,17 @@
 </script>
 
 <template>
-  <v-app-bar color="blue-grey-darken-4">
+  <v-app-bar color="base">
     <v-container>
-      <v-row dense>
-        <v-col cols="2">
+      <v-row>
+        <v-col cols="12" lg="2">
           <div class="d-flex">
             <v-app-bar-title class="align-self-center">{{ title }}</v-app-bar-title>
           </div>
         </v-col>
-        <v-col cols="10">
+        <v-col cols="12" lg="10">
           <nav class="nav">
             <RouterLink class="nav-link" to="/">Home</RouterLink>
-            <RouterLink class="nav-link" to="/detail">Detail</RouterLink>
           </nav>
         </v-col>
       </v-row>

@@ -21,15 +21,20 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 const vuetify = createVuetify({
     theme: {
-        defaultTheme: 'dark',
+        defaultTheme: 'movieAppTheme',
+        themes: {
+            movieAppTheme: {
+                dark: false,
+                colors: {
+                    'base': '#121829'
+                }
+            },
+        },
     },
     icons: {
         defaultSet: "mdi",
         aliases,
-        sets: {
-            mdi,
-            fa,
-        },
+        sets: { mdi, fa }
     },
     components,
     directives,
