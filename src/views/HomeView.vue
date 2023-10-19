@@ -1,6 +1,7 @@
 <script setup>
   import TheItem from '../components/TheHeroPage.vue'
   import IconLogo from '../components/icons/IconLogo.vue'
+  import Card from '../components/TheCard.vue'
 </script>
 
 <template>
@@ -17,6 +18,22 @@
             Explore what I have watched and also feel free to make a suggestion.
           </template>
         </TheItem>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col
+        v-for="n in 4"
+        :key="n"
+        cols="12"
+        sm="2"
+        md="3"
+      >
+        <Card
+          thumbnail="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          title="Avengers: Age of Ultron" 
+          rating="8" 
+        />
       </v-col>
     </v-row>
 
