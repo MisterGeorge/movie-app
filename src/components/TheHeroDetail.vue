@@ -1,14 +1,14 @@
 <script setup>
   defineProps({
-    thumbnail: {
+    nombre: {
       type: String,
       required: true
     },
-    title: {
+    imagen: {
       type: String,
       required: true
     },
-    rating: {
+    calificacion: {
       type: Number,
       required: true
     }
@@ -23,8 +23,8 @@
         width="1200"
         height="480"
         aspect-ratio="16/9"
-        :src="`${thumbnail}?image=${n * 5 + 10}`"
-        :lazy-src="`${thumbnail}?image=${n * 5 + 10}`"
+        :src="`${imagen}?image=${n * 5 + 10}`"
+        :lazy-src="`${imagen}?image=${n * 5 + 10}`"
         gradient="to bottom, rgba(54, 44, 146, 0.40), rgba(18, 98, 151, 0.40)"
       >
         <template v-slot:placeholder>
@@ -42,7 +42,7 @@
       </v-img>
     </v-card>
     <div class="details text-center">
-      <h1 class="title p-2">{{ title }}</h1>
+      <h1 class="title p-2">{{ nombre }}</h1>
     </div>
   </div>
 </template>

@@ -20,8 +20,8 @@
         </v-col>
         <v-col cols="12" lg="10">
           <nav class="nav">
-            <RouterLink class="nav-link" to="/">Home</RouterLink>
-            <RouterLink class="nav-link" to="/add">Add new</RouterLink>
+            <RouterLink class="nav-link" to="/">Inicio</RouterLink>
+            <RouterLink class="nav-link" to="/add">Agregar</RouterLink>
           </nav>
         </v-col>
       </v-row>

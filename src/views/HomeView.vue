@@ -12,10 +12,9 @@
           <template #icon>
             <IconLogo />
           </template>
-          <template #heading>Movie App</template>
+          <template #heading>Aplicación de Cine</template>
           <template #body>
-            List of movies and TV Shows, I, Pramod Poudel have watched till date. 
-            Explore what I have watched and also feel free to make a suggestion.
+            Lista de películas y programas de televisión que yo, Jorge Armando he visto hasta la fecha. Explora lo que he visto.
           </template>
         </TheItem>
       </v-col>
@@ -30,9 +29,9 @@
         md="3"
       >
         <Card
-          thumbnail="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg"
-          title="Avengers: Age of Ultron" 
-          rating="8" 
+          imagen="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg"
+          nombre="Avengers: Age of Ultron" 
+          calificacion="8" 
         />
       </v-col>
     </v-row>
