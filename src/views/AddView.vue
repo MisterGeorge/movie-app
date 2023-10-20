@@ -7,9 +7,9 @@
   import { required, helpers } from '@vuelidate/validators'
 
   const initialState = {
-    name       : '',
-    description: '',
-    image      : ''
+    nombre     : '',
+    descripcion: '',
+    imagen     : ''
   }
 
   const state = reactive({
@@ -17,9 +17,9 @@
   })
 
   const rules = {
-    name       : { required: helpers.withMessage('This field cannot be empty', required) },
-    description: { required: helpers.withMessage('This field cannot be empty', required) },
-    image      : { required: helpers.withMessage('This field cannot be empty', required) }
+    nombre     : { required: helpers.withMessage('This field cannot be empty', required) },
+    descripcion: { required: helpers.withMessage('This field cannot be empty', required) },
+    imagen     : { required: helpers.withMessage('This field cannot be empty', required) }
   }
 
   const v$ = useVuelidate(rules, state)
@@ -33,9 +33,9 @@
           <template #icon>
             <IconMovie />
           </template>
-          <template #heading>Add Movie</template>
+          <template #heading>Agregar nueva Pelicula</template>
           <template #body>
-            In this view you can to add a movie or TV Shows.
+            En esta vista usted puede agregar o crear una nueva pelicula.
           </template>
         </TheItem>
       </v-col>
@@ -43,36 +43,36 @@
 
     <v-row>
       <v-col
-        cols="4"
-        offset="4"
+        cols="6"
+        offset="3"
       >
         <v-form>
           <v-text-field
             required
-            v-model="state.name"
+            v-model="state.nombre"
             :rules="rules"
-            label="Name"
-            @input="v$.name.$touch"
-            @blur="v$.name.$touch"
-            :error-messages="v$.name.$errors.map(e => e.$message)"
+            label="Nombre de la pelicula"
+            @input="v$.nombre.$touch"
+            @blur="v$.nombre.$touch"
+            :error-messages="v$.nombre.$errors.map(e => e.$message)"
           ></v-text-field>
 
           <v-textarea
-            v-model="state.description"
+            v-model="state.descripcion"
             :rules="rules"
-            label="Description"
-            @input="v$.description.$touch"
-            @blur="v$.description.$touch"
-            :error-messages="v$.description.$errors.map(e => e.$message)"
+            label="Descripcion de la pelicula"
+            @input="v$.descripcion.$touch"
+            @blur="v$.descripcion.$touch"
+            :error-messages="v$.descripcion.$errors.map(e => e.$message)"
           ></v-textarea>
 
           <v-text-field
-            v-model="state.image"
+            v-model="state.imagen"
             :rules="rules"
-            label="Image"
-            @input="v$.image.$touch"
-            @blur="v$.image.$touch"
-            :error-messages="v$.image.$errors.map(e => e.$message)"
+            label="Imagen"
+            @input="v$.imagen.$touch"
+            @blur="v$.imagen.$touch"
+            :error-messages="v$.imagen.$errors.map(e => e.$message)"
           ></v-text-field>
 
           <v-spacer></v-spacer>
@@ -82,7 +82,7 @@
             @click="v$.$validate"
             block
             class="mt-2"
-            text="Add new"
+            text="Agregar nueva"
           ></v-btn>
         </v-form>
       </v-col>

@@ -7,15 +7,15 @@
     import IconTag from '../components/icons/IconTag.vue'
 
     defineProps({
-        title: {
+        nombre: {
             type: String,
             required: true
         },
-        description: {
+        descripcion: {
             type: String,
             required: true
         },
-        rating: {
+        calificacion: {
             type: Number,
             required: true
         }
@@ -31,26 +31,26 @@
     >
         <v-card-item>
             <h2 class="card-title mb-5">
-                {{ title }}
+                {{ nombre }}
             </h2>
             <p class="card-description mb-5">
-                {{ description }}
+                {{ descripcion }}
             </p>
 
             <DetailItem>
                 <template #icon>
                   <IconStarCustom />
                 </template>
-                <template #heading>Rating</template>
+                <template #heading>Calificación</template>
             
-                {{ rating }}
+                {{ calificacion }}
             </DetailItem>
 
             <DetailItem>
                 <template #icon>
                   <IconBookmarkCustom />
                 </template>
-                <template #heading>Type</template>
+                <template #heading>Tipo</template>
             
                 Movie
             </DetailItem>
@@ -59,7 +59,7 @@
                 <template #icon>
                   <IconCalendar />
                 </template>
-                <template #heading>Realese Date</template>
+                <template #heading>Fecha de lanzamiento</template>
             
                 2019-04-24
             </DetailItem>
@@ -68,7 +68,7 @@
                 <template #icon>
                   <IconClock />
                 </template>
-                <template #heading>Run time</template>
+                <template #heading>Duración</template>
             
                 181 min
             </DetailItem>
@@ -77,7 +77,7 @@
                 <template #icon>
                   <IconTag />
                 </template>
-                <template #heading>Genres</template>
+                <template #heading>Género</template>
             
                 Adventure,  Science Fiction, Action
             </DetailItem>

@@ -1,14 +1,14 @@
 <script setup>
     defineProps({
-        thumbnail: {
+        nombre: {
             type: String,
             required: true
         },
-        title: {
+        imagen: {
             type: String,
             required: true
         },
-        rating: {
+        calificacion: {
             type: Number,
             required: true
         }
@@ -25,7 +25,7 @@
         >
             <v-img
                 class="card-thumbanil rounded-b-xl"
-                :src="thumbnail"
+                :src="imagen"
                 width="300px"
                 height="400px"
                 cover
@@ -38,12 +38,12 @@
                         half-increments
                         readonly
                     ></v-rating>
-                    <p class="text-yellow text-h5 ms-1 mt-0">{{ rating }}</p>
+                    <p class="text-yellow text-h5 ms-1 mt-0">{{ calificacion }}</p>
                 </div>
             </v-img>
 
             <v-card-title class="card-title pa-4 text-center">
-                {{ title }}
+                {{ nombre }}
             </v-card-title>
         </v-card>
     </v-hover>
