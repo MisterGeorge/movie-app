@@ -1,6 +1,6 @@
 <script setup>
     defineProps({
-        thumbnail: {
+        imagen: {
             type: String,
             required: true
         }
@@ -15,7 +15,7 @@
     >
         <v-img
             class="rounded-xl"
-            :src="thumbnail"
+            :src="imagen"
             width="450px"
             height="620px"
             cover
